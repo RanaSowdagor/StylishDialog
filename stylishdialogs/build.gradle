@@ -1,0 +1,25 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
+    }
+    lint {
+        abortOnError false
+    }
+    namespace 'com.rana.stylishdialogs'
+
+}
+
+dependencies {
+    implementation 'com.pnikosis:materialish-progress:1.7'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.test:monitor:1.6.1'
+    implementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'junit:junit:4.12'
+}
